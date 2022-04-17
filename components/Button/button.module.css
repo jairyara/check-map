@@ -1,0 +1,11 @@
+.button {
+    width: 250px;
+    height: 45px;
+    background: linear-gradient(270deg, #FFC837 0%, #FF8008 100%);
+    border-radius: 5px;
+    border: none;
+    color: var(--white-color);
+    font-size: var(--lg);
+    font-weight: 700;
+    cursor: pointer;
+}

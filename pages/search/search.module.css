@@ -1,0 +1,11 @@
+.content {
+    padding-right: 20px;
+}
+
+.content h2 {
+    margin-bottom: 50px;
+}
+
+.content h2 + * {
+    margin-bottom: 30px;
+}

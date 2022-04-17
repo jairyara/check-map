@@ -1,0 +1,29 @@
+.listItem {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.listItem a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.listItem .active {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.listItem a span:first-child {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.listItem a span:last-child  {
+    border-bottom: 2px solid var(--white-color);
+}
+
+.listItem .active span:last-child {
+    border-bottom: 2px solid var(--primary-color);
+}

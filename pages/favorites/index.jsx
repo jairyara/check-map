@@ -1,15 +1,20 @@
 import React from "react";
-import Layout from "@components/layout/Layout";
-import Content from "@pages/favorites/content";
+import styles from "@pages/favorites/favorites.module.css";
+import PlaceCard from "@components/PlaceCard/PlaceCard";
 
 const Favorites = () => {
     return (
         <>
-            <Layout>
-                {
-                    <Content />
-                }
-            </Layout>
+            <section className={styles.content}>
+                <h2>Favorite places</h2>
+                <div className={styles.containerGrid}>
+                    <PlaceCard />
+                    <PlaceCard />
+                    <PlaceCard />
+                    <PlaceCard />
+                    <PlaceCard />
+                </div>
+            </section>
         </>
     )
 }

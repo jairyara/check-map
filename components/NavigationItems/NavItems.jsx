@@ -7,6 +7,10 @@ const NavItems = ({link, icon, name}) => {
 
     const router = useRouter();
 
+    if (router.pathname === '/') {
+        link = 'home'
+    }
+
     return(
         <li className={styles.listItem}>
             <Link href={`/${link}`}>

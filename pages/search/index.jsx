@@ -1,17 +1,17 @@
 import React from "react";
-import Layout from "@components/layout/Layout";
-import Content from "@pages/search/content";
-import {useRouter} from "next/router";
+import styles from "@pages/search/search.module.css";
+import SearchInput from "@components/SearchInput/SearchInput";
+import ResultCard from "@components/ResultCard/ResultCard";
 
 const Search = () => {
 
     return(
         <>
-            <Layout>
-                {
-                    <Content />
-                }
-            </Layout>
+            <section className={styles.content}>
+                <h2>Search new places</h2>
+                <SearchInput />
+                <ResultCard />
+            </section>
         </>
     )
 }

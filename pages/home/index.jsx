@@ -1,16 +1,29 @@
 import React from "react";
-import Layout from "@components/layout/Layout";
-import Content from "@pages/home/content";
+import styles from "@pages/home/home.module.css";
+import PlaceCard from "@components/PlaceCard/PlaceCard";
 
 const Home = () => {
 
     return(
         <>
-            <Layout >
-                {
-                    <Content />
-                }
-            </Layout>
+            <section className={styles.content}>
+                <h2>Discover new places</h2>
+                <div className={styles.containerGrid}>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                    <PlaceCard/>
+                </div>
+            </section>
         </>
     )
 }

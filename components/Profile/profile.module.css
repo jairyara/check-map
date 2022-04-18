@@ -1,0 +1,12 @@
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile img {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+    border: none;
+}

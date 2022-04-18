@@ -10,6 +10,9 @@
       ],
       "@brand/*": [
         "./public/assets/brand/*"
+      ],
+      "@img/*": [
+        "./public/assets/img/*"
       ]
     }
   }

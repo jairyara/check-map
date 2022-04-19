@@ -8,12 +8,9 @@ import styles from "./layout.module.css";
 const Layout = ({ children }) => {
 
     const router = useRouter();
-
     let route = router.pathname;
     let namePage = route.slice(1);
     let name = namePage.charAt(0).toUpperCase() + namePage.slice(1);
-
-    const profile = "Connor Mitchell";
 
     return(
         <>
@@ -25,7 +22,7 @@ const Layout = ({ children }) => {
                     route !== '/login' ? <Aside/> : null
                 }
                 {
-                    route !== '/login' ? <Header title={name} user={profile} /> : null
+                    route !== '/login' ? <Header title={name} user={`Connor Mitchell`} /> : null
                 }
                 <main>
                     { children }

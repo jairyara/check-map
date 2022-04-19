@@ -8,10 +8,12 @@
       "@pages/*": [
         "pages/*"
       ],
-        "@libs/*": [
-          "libs/*"
-        ]
-      ,
+      "@libs/*": [
+        "libs/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
       "@brand/*": [
         "public/assets/brand/*"
       ],

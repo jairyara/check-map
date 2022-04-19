@@ -12,7 +12,12 @@ const nextConfig = {
         source: '/logout',
         destination: '/login',
         permanent: true
-      }
+      },
+      {
+        source: '/api',
+        destination: '/api/v1',
+        permanent: true
+      },
     ]
   },
 }

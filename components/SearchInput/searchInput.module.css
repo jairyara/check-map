@@ -17,3 +17,11 @@
 .form div > span {
     color: var(--primary-color);
 }
+
+.popOver {
+    background-color: var(--contrast-color);
+}
+
+.popOver li:hover {
+    background-color: var(--info-color);
+}

@@ -8,11 +8,15 @@
       "@pages/*": [
         "pages/*"
       ],
+        "@libs/*": [
+          "libs/*"
+        ]
+      ,
       "@brand/*": [
-        "./public/assets/brand/*"
+        "public/assets/brand/*"
       ],
       "@img/*": [
-        "./public/assets/img/*"
+        "public/assets/img/*"
       ]
     }
   }

@@ -9,9 +9,9 @@ const Layout = ({ children }) => {
 
     const router = useRouter();
 
-    const namePage = router.pathname.slice(1)
-
-    const name = namePage.charAt(0).toUpperCase() + namePage.slice(1);
+    let route = router.pathname;
+    let namePage = route.slice(1);
+    let name = namePage.charAt(0).toUpperCase() + namePage.slice(1);
 
     const profile = "Connor Mitchell";
 
@@ -20,9 +20,13 @@ const Layout = ({ children }) => {
             <Head>
                 <title>{name} - CheckMap</title>
             </Head>
-            <div className={styles.layout}>
-                <Aside />
-                <Header title={name} user={profile} />
+            <div className={route !== '/login' ? styles.layout : styles.login}>
+                {
+                    route !== '/login' ? <Aside/> : null
+                }
+                {
+                    route !== '/login' ? <Header title={name} user={profile} /> : null
+                }
                 <main>
                     { children }
                 </main>

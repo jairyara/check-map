@@ -1,8 +1,5 @@
 import React, {useState} from "react";
 import {useLoadScript } from "@react-google-maps/api";
-import {GoogleMap, Marker, InfoWindow} from "@react-google-maps/api";
-import usePlacesAutocomplete, {getGeocode, getLatLng} from "use-places-autocomplete";
-import SearchInput from "@components/SearchInput/SearchInput";
 import ResultCard from "@components/ResultCard/ResultCard";
 import styles from "@pages/search/search.module.css";
 
